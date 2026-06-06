@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Control de Stock Pro</title>
+
+  <link rel="stylesheet" href="prueba.css">
+</head>
+
+<body>
+
+  <h1>📦 Control de Stock Pro</h1>
+
+  <div id="alerta" class="alerta oculto"></div>
+
+  <!-- BUSCADOR -->
+  <input type="text" id="buscador" placeholder="🔎 Buscar producto o categoría...">
+
+  <!-- EXPORTAR -->
+  <div class="exportar">
+    <button onclick="exportarExcel()">📊 Exportar Excel</button>
+    <button onclick="exportarWord()">📝 Exportar Word</button>
+  </div>
+
+  <!-- FORMULARIO -->
+  <div class="form">
+
+    <input type="text" id="producto" placeholder="Producto">
+
+    <!-- NUEVO: categoría -->
+    <input type="text" id="categoria" placeholder="Categoría (ej: bebidas, limpieza)">
+
+    <input type="number" id="cantidad" placeholder="Cantidad">
+
+    <button onclick="agregarProducto()">Agregar</button>
+  </div>
+
+  <div id="lista"></div>
+
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+  <script type="module" src="prueba.js"></script>
+
+</body>
+</html>

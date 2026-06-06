@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 180px;
+}
+
+button {
+  padding: 10px;
+  background: #2e86de;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1b4f72;
+}
+
+/* EXPORTAR */
+.exportar {
+  margin: 10px;
+}
+
+.exportar button {
+  margin: 5px;
+  background: #27ae60;
+}
+
+.exportar button:hover {
+  background: #1e8449;
+}
+
+/* ALERTA ROJA */
+.alerta {
+  background: red;
+  color: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 60%;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+/* PRODUCTOS */
+.producto {
+  background: white;
+  padding: 10px;
+  margin: 10px auto;
+  width: 60%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.producto small {
+  display: block;
+  color: gray;
+  margin-top: 4px;
+}
